@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="robosoft.com.networkassignment" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="android.app.searchable"
+            android:resource="@xml/searchable" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:theme="@style/CustomTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DescriptiveAlbumActivity"
+            android:label="@string/title_activity_descriptive_album"
+            android:theme="@style/AppTheme" >
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="2911548e033cc329ee6ce585d80dec95788f4223" />
+
+        <activity
+            android:name=".TwitterLoginActivity"
+            android:label="@string/title_activity_twitter_login"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/title_activity_search"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value="robosoft.com.networkassignment.SearchActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ShareWithTwitterActivity"
+            android:label="@string/title_activity_share_with_twitter"
+            android:theme="@style/AppTheme" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Parser</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="tabs">
+        <item>JSON</item>
+        <item>XML with listview</item>
+        <item>XML with recyclerview</item>
+    </string-array>
+    <string name="title_activity_descriptive_album">DescriptiveAlbumActivity</string>
+    <string name="title_activity_twitter_login">TwitterLoginActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_share_with_twitter">ShareWithTwitterActivity</string>
+</resources>
